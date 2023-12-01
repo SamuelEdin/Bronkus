@@ -8,7 +8,7 @@ public class CameraFollow : MonoBehaviour
 
     void Update()
     {
-        transform.position = player.position + new Vector3(0,0,-10);
+        transform.position = player.position + new Vector3(0,0,-10); //camera is set at the same position of player with different z value
         
     }
 }
