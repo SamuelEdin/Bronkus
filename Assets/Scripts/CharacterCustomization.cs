@@ -9,6 +9,11 @@ public class CharacterCustomization : MonoBehaviour
     public GameObject faces;
     public GameObject colours;
 
+    public GameObject Player;
+
+    private Sprite selectedFace;
+    private Sprite selectedColour;
+
     void Start()
     {
         faces.SetActive(false);
@@ -28,5 +33,16 @@ public class CharacterCustomization : MonoBehaviour
         faces.SetActive(true);
         startGame.SetActive(false);
     }
-   
+
+    public void SelectFace(Sprite faceSprite)
+    {
+        selectedFace = faceSprite;
+    }
+
+    public void SelectColoor(Sprite colourSprite)
+    {
+        selectedColour = colourSprite;
+    }
+
+    
 }
