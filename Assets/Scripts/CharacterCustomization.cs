@@ -19,7 +19,7 @@ public class CharacterCustomization : MonoBehaviour
     public GameObject colour;
 
     //public Sprite[] Images;
-    public Texture2D[] Textures;    
+    public Texture2D[] Textures;
 
     void Start()
     {
@@ -46,6 +46,11 @@ public class CharacterCustomization : MonoBehaviour
         faces.SetActive(true);
         startGame.SetActive(false);
         //PlayerImage.SetActive(true);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 
     public void UpdatePreview(int index)
