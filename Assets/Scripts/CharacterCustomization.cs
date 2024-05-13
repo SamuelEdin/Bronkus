@@ -53,6 +53,15 @@ public class CharacterCustomization : MonoBehaviour
         Application.Quit();
     }
 
+    public void StartGame()
+    {
+        PlayerImage.transform.SetParent(null);
+        DontDestroyOnLoad(PlayerImage);
+
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Game Scene");
+        //Byter scen
+    }
+
     public void UpdatePreview(int index)
     {
         //faceImage.sprite = Images[index - 1];

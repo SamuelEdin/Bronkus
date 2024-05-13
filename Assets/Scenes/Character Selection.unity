@@ -208,7 +208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2072849398}
         m_TargetAssemblyTypeName: CharacterCustomization, Assembly-CSharp
-        m_MethodName: ShowColours
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1681,7 +1681,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2072849398}
         m_TargetAssemblyTypeName: CharacterCustomization, Assembly-CSharp
-        m_MethodName: ShowColours
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3098,7 +3098,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2072849398}
         m_TargetAssemblyTypeName: CharacterCustomization, Assembly-CSharp
-        m_MethodName: ShowColours
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3243,7 +3243,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2072849398}
         m_TargetAssemblyTypeName: CharacterCustomization, Assembly-CSharp
-        m_MethodName: ShowColours
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4093,7 +4093,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2072849398}
         m_TargetAssemblyTypeName: CharacterCustomization, Assembly-CSharp
-        m_MethodName: ShowColours
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4630,7 +4630,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2072849398}
         m_TargetAssemblyTypeName: CharacterCustomization, Assembly-CSharp
-        m_MethodName: ShowColours
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5032,7 +5032,7 @@ MonoBehaviour:
   startGame: {fileID: 698874706}
   faces: {fileID: 732008248}
   colours: {fileID: 1626352818}
-  PlayerImage: {fileID: 0}
+  PlayerImage: {fileID: 1106264906}
   face: {fileID: 2028507454}
   colour: {fileID: 852869955}
   Textures:

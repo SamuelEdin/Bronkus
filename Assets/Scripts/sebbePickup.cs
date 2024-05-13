@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Transactions;
 using UnityEngine;
+using TMPro;
 
-public class keyPickup : MonoBehaviour
+public class sebbePickup : MonoBehaviour
 {
-    [SerializeField] string Color;
+    [SerializeField] string id;
     [SerializeField] GameObject Player;
     private Management manager;
 
-    [SerializeField] private GameObject keyIcon;
-
+    [SerializeField] private GameObject sebbeTextbox;
     private void Start()
     {
         manager = Player.GetComponent<Management>();
@@ -19,9 +20,10 @@ public class keyPickup : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            manager.addKey(Color);
-            keyIcon.SetActive(true);
+            manager.addSebbe(id);
+            sebbeTextbox.GetComponent<TextMeshProUGUI>().text = manager.pickedSebbes.Count.ToString() + " / 6";
             Destroy(gameObject);
         }
     }
+
 }
