@@ -19,10 +19,16 @@ public class playerSprite : MonoBehaviour
 
         Image faceImage = face.GetComponent<Image>();
         Image bodyImage = body.GetComponent<Image>();
+        Image theImage = dontdestroy.GetComponent<Image>();
 
  
         face.SetParent(transform);
         body.SetParent(transform);
 
+        playerSpriteRenderer.sprite = faceImage.sprite;
+        playerSpriteRenderer.sprite = bodyImage.sprite;
+        playerSpriteRenderer.sprite = theImage.sprite;
+
+       
     }
 }
