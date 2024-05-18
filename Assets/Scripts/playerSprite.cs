@@ -8,6 +8,9 @@ public class playerSprite : MonoBehaviour
 {
     private SpriteRenderer playerSpriteRenderer;
 
+    [SerializeField] private GameObject faceSprite;
+    [SerializeField] private GameObject colorSprite;
+
     private void Start()
     {
         playerSpriteRenderer = GetComponent<SpriteRenderer>();
@@ -15,20 +18,18 @@ public class playerSprite : MonoBehaviour
         GameObject dontdestroy = GameObject.Find("PlayerImage");
 
         Transform face = dontdestroy.transform.GetChild(0);
-        Transform body = dontdestroy.transform.GetChild(1);
+        Transform color = dontdestroy.transform.GetChild(1);
 
         Image faceImage = face.GetComponent<Image>();
-        Image bodyImage = body.GetComponent<Image>();
+        Image colorImage = color.GetComponent<Image>();
         Image theImage = dontdestroy.GetComponent<Image>();
 
- 
         face.SetParent(transform);
-        body.SetParent(transform);
+        color.SetParent(transform);
 
-        playerSpriteRenderer.sprite = faceImage.sprite;
-        playerSpriteRenderer.sprite = bodyImage.sprite;
-        playerSpriteRenderer.sprite = theImage.sprite;
-
+        //playerSpriteRenderer.sprite = faceImage.sprite;
+        //playerSpriteRenderer.sprite = bodyImage.sprite;
+        //playerSpriteRenderer.sprite = theImage.sprite;
        
     }
 }

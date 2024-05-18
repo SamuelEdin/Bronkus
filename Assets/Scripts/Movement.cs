@@ -10,12 +10,6 @@ public class Movement : MonoBehaviour
 
     private Vector2 moveDirection;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()   
     {
         Inputs();
@@ -37,5 +31,11 @@ public class Movement : MonoBehaviour
     void Move ()
     {
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+
+        if (moveDirection != Vector2.zero)
+        {
+            float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg + 90f;
+            rb.rotation = angle;
+        }
     }
 }
